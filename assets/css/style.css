@@ -504,16 +504,27 @@ section {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Capa do projeto */
-.project-item img {
+/* Carrossel de imagens */
+.project-carousel {
+    position: relative;
     width: 100%;
-    height: 180px;
-    object-fit: cover;
-    transition: transform 0.5s ease;
+    height: 200px;
+    overflow: hidden;
 }
 
-.project-item:hover img {
-    transform: scale(1.1);
+.project-carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.project-carousel img.active {
+    opacity: 1;
 }
 
 /* Conteúdo do card */
@@ -562,35 +573,39 @@ section {
     transform: scale(1.05);
 }
 
-/* Animação ao carregar */
-.project-item {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 0.5s ease forwards;
+/* Project-Content | Tecnologias usadas*/
+
+/* Estilo para a seção de tecnologias usadas */
+.technologies-used {
+    margin: 20px 0;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-.project-item:nth-child(1) {
-    animation-delay: 0.2s;
+.technologies-used p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: var(--cor-texto);
 }
 
-.project-item:nth-child(2) {
-    animation-delay: 0.4s;
+.tech-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }
 
-.project-item:nth-child(3) {
-    animation-delay: 0.6s;
+.tech-icons i {
+    margin-top: 10px;
+    font-size: 2rem;
+    color: var(--cor-primaria);
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.tech-icons i:hover {
+    transform: scale(1.2);
+    color: green;
 }
+
 
 /* Seção de habilidades com animação de fundo */
 .skills {
@@ -704,6 +719,57 @@ section {
 .skill-item:nth-child(4) {
     animation-delay: 0.8s;
 }
+
+/* Estilo para a seção de tecnologias usadas */
+.skills-tech {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.tech-card {
+    background-color: #29293f; /* Altera a cor de fundo */
+    border-radius: 12px;
+    padding: 40px; /* Aumenta o padding */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    flex: 1;
+    max-width: 400px; /* Mantém a largura máxima */
+    min-height: 200px; /* Diminui a altura mínima */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tech-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.tech-usadas p, .ferramentas-usadas p, .linguagens-usadas p {
+    font-size: 1.5rem; /* Aumenta o tamanho do texto */
+    margin-bottom: 20px;
+    color: var(--cor-fundo);
+}
+
+/* Estilo para os ícones de tecnologias */
+.tech-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Aumenta o espaçamento entre os ícones */
+}
+
+.tech-icons i {
+    font-size: 3rem; /* Aumenta o tamanho dos ícones */
+    color: var(--cor-primaria);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.tech-icons i:hover {
+    transform: scale(1.2);
+    color: var(--cor-secundaria);
+}
+
+
 
 @keyframes fadeInUp {
     from {
