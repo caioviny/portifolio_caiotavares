@@ -69,7 +69,9 @@ body {
 .navbar ul li a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
-}/* Hero Section */
+}
+
+/* Hero Section */
 .hero {
     position: relative;
     display: flex;
@@ -178,21 +180,20 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     color: white;
-    background-color: var(--cor-principal);
+    background-color: var(--cor-primaria);
     border: none;
     border-radius: 50px;
     text-decoration: none;
     transition: transform 0.3s, box-shadow 0.3s;
     animation: fade-in 1.5s ease-in-out 0.8s;
     text-align: center; /* Centraliza o texto */
-    width: 550px; /* Ajusta a largura automaticamente */
+    width: 100%; /* Ajusta a largura automaticamente */
 }
 
 .btn-primary:hover {
     transform: scale(1.1);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
-
 
 /* Animações */
 @keyframes fade-in {
@@ -295,7 +296,6 @@ body {
         transform: translateY(0);
     }
 }
-
 
 /* Seções */
 section {
@@ -459,7 +459,6 @@ section {
     }
 }
 
-
 /* Seção | Meus Projetos*/
 
 /* Seção de projetos */
@@ -575,6 +574,8 @@ section {
 
 /* Project-Content | Tecnologias usadas*/
 
+/* Project-Content | Tecnologias usadas*/
+
 /* Estilo para a seção de tecnologias usadas */
 .technologies-used {
     margin: 20px 0;
@@ -583,7 +584,7 @@ section {
 }
 
 .technologies-used p {
-    font-size: 1rem;
+    font-size: 1.25rem; /* Reduzi de 1.5rem para 1.25rem */
     margin-bottom: 10px;
     color: var(--cor-texto);
 }
@@ -591,12 +592,12 @@ section {
 .tech-icons {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 15px; /* Reduzi de 30px para 15px */
 }
 
 .tech-icons i {
     margin-top: 10px;
-    font-size: 2rem;
+    font-size: 2rem; /* Reduzi de 3rem para 2rem */
     color: var(--cor-primaria);
     transition: transform 0.3s ease, color 0.3s ease;
 }
@@ -605,7 +606,6 @@ section {
     transform: scale(1.2);
     color: green;
 }
-
 
 /* Seção de habilidades com animação de fundo */
 .skills {
@@ -640,7 +640,7 @@ section {
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    gap: 15px; /* Reduzi de 20px para 15px */
     justify-items: center;
 }
 
@@ -668,9 +668,9 @@ section {
 
 /* Ícones */
 .skill-item i {
-    font-size: 3rem;
+    font-size: 2.5rem; /* Reduzi de 3rem para 2.5rem */
+    margin-bottom: 10px; /* Menor espaçamento */
     color: #4caf50;
-    margin-bottom: 15px;
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
@@ -681,8 +681,8 @@ section {
 
 /* Títulos das habilidades */
 .skill-item h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+    font-size: 1.25rem; /* Reduzi de 1.5rem para 1.25rem */
+    margin-bottom: 8px;
     color: #ffffff;
     transition: color 0.3s ease;
 }
@@ -693,7 +693,7 @@ section {
 
 /* Descrição das habilidades */
 .skill-item p {
-    font-size: 1rem;
+    font-size: 0.9rem; /* Reduzi de 1rem para 0.9rem */
     color: #d3d3d3;
     line-height: 1.6;
     transition: color 0.3s ease;
@@ -731,12 +731,12 @@ section {
 .tech-card {
     background-color: #29293f; /* Altera a cor de fundo */
     border-radius: 12px;
-    padding: 40px; /* Aumenta o padding */
+    padding: 30px; /* Reduzi de 40px para 30px */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
     flex: 1;
-    max-width: 400px; /* Mantém a largura máxima */
-    min-height: 200px; /* Diminui a altura mínima */
+    max-width: 900px; /* Mantém a largura máxima */
+    min-height: 180px; /* Reduzi de 200px para 180px */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -746,7 +746,7 @@ section {
 }
 
 .tech-usadas p, .ferramentas-usadas p, .linguagens-usadas p {
-    font-size: 1.5rem; /* Aumenta o tamanho do texto */
+    font-size: 1.25rem; /* Reduzi de 1.5rem para 1.25rem */
     margin-bottom: 20px;
     color: var(--cor-fundo);
 }
@@ -755,21 +755,24 @@ section {
 .tech-icons {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Aumenta o espaçamento entre os ícones */
+    gap: 15px; /* Reduzi de 20px para 15px */
+    margin-top: 10px;
 }
 
-.tech-icons i {
-    font-size: 3rem; /* Aumenta o tamanho dos ícones */
-    color: var(--cor-primaria);
-    transition: transform 0.3s ease, color 0.3s ease;
+.quality-item {
+    text-align: center;
 }
 
-.tech-icons i:hover {
-    transform: scale(1.2);
-    color: var(--cor-secundaria);
+.quality-item i {
+    font-size: 2rem; /* Reduzi de 40px para 2rem */
+    color: #4caf50; /* Ajuste a cor como preferir */
 }
 
-
+.quality-item p {
+    margin-top: 5px;
+    font-size: 0.85rem; /* Reduzi de 16px para 0.85rem */
+    font-weight: bold;
+}
 
 @keyframes fadeInUp {
     from {
@@ -1147,5 +1150,36 @@ button[type="submit"]:active {
 
     .footer-links a {
         font-size: 1.2rem;
+    }
+}
+
+/* Menu hambúrguer para telas menores */
+.navbar-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.navbar-toggle div {
+    width: 25px;
+    height: 3px;
+    background-color: var(--cor-secundaria);
+    margin: 4px;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .navbar-toggle {
+        display: flex;
+    }
+
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar ul.active {
+        display: flex;
     }
 }
