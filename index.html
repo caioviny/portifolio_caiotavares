@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Caio Tavares</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!-- Incluindo Anime.js -->
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Link para a fonte Source Code Pro -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<style>
+
+
+</style>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">CT</div>
+            <ul class="nav-links">
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div id="particles-js"></div>
+        <div class="container">
+            <div class="content">
+                <div class="photo"></div>
+                <div class="hero-content">
+                    <h1>
+                        <span class="destaque-intro">Olá, eu sou</span>
+                        <span class="destaque-nome">Caio Tavares</span>
+                    </h1>
+                    <p>
+                        <span class="destaque-profissao" id="rotating-text">Desenvolvedor de sistemas</span>, apaixonado por criar soluções
+                        inovadoras e eficientes.
+                    </p>
+                    <a href="#projects" class="btn-primary">Ver Projetos</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel">
+            <div class="carousel-item"><i class="devicon-html5-plain"></i></div>
+            <div class="carousel-item"><i class="devicon-css3-plain"></i></div>
+            <div class="carousel-item"><i class="devicon-javascript-plain"></i></div>
+            <div class="carousel-item"><i class="devicon-python-plain"></i></div>
+            <div class="carousel-item"><i class="devicon-php-plain"></i></div>
+            <div class="carousel-item"><i class="devicon-java-plain"></i></div>
+            <div class="carousel-item"><i class="devicon-mysql-plain"></i></div>
+            <div class="carousel-item"><i class="devicon-tensorflow-original"></i></div>
+            <div class="carousel-item"> <i class="fas fa-map-marked-alt"></i></div>
+        </div>
+    </section>
+
+    <!-- Sobre Mim -->
+    <section id="about" class="about">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>Sobre Mim</h2>
+                <p>
+                    Sou um <strong>desenvolvedor de sistemas</strong> com experiência em
+                    <strong>banco de dados</strong>, <strong>interfaces interativas</strong>
+                    e <strong>otimização de processos</strong>.
+                    Proativo e apaixonado por <strong>resolver problemas</strong>, adoro criar
+                    soluções tecnológicas inovadoras que impactam positivamente o dia a dia das pessoas.
+                </p>
+                <ul>
+                    <li><i class="devicon-python-plain"></i> Experiência com Python e ML</li>
+                    <li><i class="devicon-mysql-plain"></i> Administração de Bancos de Dados</li>
+                    <li><i class="devicon-figma-plain"></i> Design de Interfaces no Figma</li>
+                    <li><i class="devicon-git-plain"></i> Controle de Versão com Git</li>
+                </ul>
+                <a href="#projects" class="btn-primary">Veja meus projetos</a>
+            </div>
+            <div class="about-image">
+                <img src="assets/img/caioFoto_fundoBranco.png" alt="Foto de Caio Tavares" />
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Meus Projetos -->
+    <section id="projects" class="projects">
+        <div class="projects-header">
+            <h2>Meus Projetos</h2>
+            <p>Explore alguns dos trabalhos que mostram minha paixão por desenvolvimento e design inovador.</p>
+        </div>
+        <div class="project-list">
+            <!-- Projeto 1 -->
+            <div class="project-item">
+                <img src="assets/img/caioFoto_fundoBege.png" alt="Capa Neo Finance">
+                <div class="project-content">
+                    <h3>JWEAR</h3>
+                    <p>Plataforma de gerenciamento financeiro com interface intuitiva e recursos exclusivos.</p>
+                    <a href="projetos/" target="_blank" class="btn-project">Ver Projeto</a>
+                </div>
+            </div>
+
+            <!-- Projeto 2 -->
+            <div class="project-item">
+                <img src="assets/img/pro_neofinance/neofinance_principal.png" alt="Capa Neo Finance">
+                <div class="project-content">
+                    <h3>NEO FINANCE</h3>
+                    <p>Plataforma de gerenciamento financeiro com interface intuitiva e recursos exclusivos.</p>
+                    <a href="projetos/p_neofinance.html" target="_blank" class="btn-project">Ver Projeto</a>
+                </div>
+            </div>
+
+            <!-- Projeto 3 -->
+            <div class="project-item">
+                <img src="assets/img/caioFoto_fundoBege.png" alt="Capa Neo Finance">
+                <div class="project-content">
+                    <h3>VISION TECH</h3>
+                    <p>Plataforma de gerenciamento financeiro com interface intuitiva e recursos exclusivos.</p>
+                    <a href="projetos/" target="_blank" class="btn-project">Ver Projeto</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="skills" class="skills">
+        <div class="skills-header">
+            <h2>Habilidades</h2>
+            <p>Explore as ferramentas e tecnologias que domino para criar soluções inovadoras.</p>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <i class="fas fa-map-marked-alt"></i>
+                <h3>Geoprocessamento</h3>
+                <p>Domínio do QGIS para análise e visualização de dados geográficos.</p>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-database"></i>
+                <h3>Banco de Dados</h3>
+                <p>Experiência com MySQL e SQL Server para gestão eficiente de dados.</p>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-js"></i>
+                <h3>Programação</h3>
+                <p>Habilidades com JavaScript, Python, PHP e Java para desenvolvimento completo.</p>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-tools"></i>
+                <h3>Ferramentas</h3>
+                <p>Figma, Git e Machine Learning para projetos modernos e colaborativos.</p>
+            </div>
+            
+        </div>       
+    </section>
+
+    <!-- Contato -->
+    <section id="contact" class="contact">
+        <h2>Contato</h2>
+        <p>Entre em contato para colaborações ou oportunidades:</p>
+        <ul>
+            <li>
+                <a href="https://www.linkedin.com/in/caio-t-665bb9288/" target="_blank">
+                    <i class="fab fa-linkedin icon"></i>
+                    LinkedIn
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/tavarezcaioo/" target="_blank">
+                    <i class="fab fa-instagram icon"></i>
+                    Instagram
+                </a>
+            </li>
+            <li>
+                <a href="mailto:tavarezcaioo@gmail.com">
+                    <i class="fas fa-envelope icon"></i>
+                    Email
+                </a>
+            </li>
+            <li>
+                <a href="https://wa.me/557184831250" target="_blank">
+                    <i class="fab fa-whatsapp icon"></i>
+                    WhatsApp
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>Caio Tavares</h3>
+                <p>Transformando ideias em soluções digitais.</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/caio-t-665bb9288/" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/caioviny" target="_blank" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/tavarezcaioo/" target="_blank" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/557184831250" target="_blank" title="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="mailto:tavarezcaioo@gmail.com" title="E-mail">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Particles.js Configuration -->
+    <script src="assets/js/particulas.js"></script>
+    <script>
+        // script.js
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        const texts = [
+            "Programador de Software Web",
+            "Especialista em Desenvolvimento",
+            "Desenvolvedor Full Stack Web",
+            "Criador de Soluções Inovadoras",
+            "Desenvolvedor de sistemas",
+        ];
+    
+        let index = 0;
+        const rotatingText = document.getElementById('rotating-text');
+    
+        function changeText() {
+            rotatingText.style.animation = 'fadeOut 0.5s ease-in-out forwards';
+            setTimeout(() => {
+                rotatingText.textContent = texts[index];
+                rotatingText.style.animation = 'fadeIn 0.5s ease-in-out forwards';
+                index = (index + 1) % texts.length;
+            }, 500);
+        }
+    
+        setInterval(changeText, 3000);
+    });
+    
+    </script>
+</body>
+
+</html>
