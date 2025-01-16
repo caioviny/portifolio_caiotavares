@@ -459,6 +459,109 @@ section {
     }
 }
 
+/* Seção | Experiência */
+.experience {
+    padding: 8rem 2rem;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    gap: 2rem;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Texto da experiência */
+.experience-text {
+    flex: 1;
+    max-width: 600px;
+    text-align: left;
+}
+
+.experience-text h2 {
+    font-size: 2.5rem;
+    color: #4caf50;
+    margin-bottom: 1rem;
+    text-align: center; /* Centraliza o título */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.experience-text h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.experience-text h4 {
+    font-size: 1.2rem;
+    color: #777;
+    margin-bottom: 1.5rem;
+}
+
+.experience-text p {
+    font-size: 1rem; /* Reduzi o tamanho do texto */
+    line-height: 1.6; /* Ajustei o espaçamento entre linhas */
+    color: #555;
+}
+
+/* Ícone da experiência */
+.experience-icon {
+    flex: 1;
+    max-width: 400px;
+    text-align: center;
+}
+
+.experience-icon i {
+    font-size: 6rem;
+    color: #4caf50;
+    animation: bounce 2s infinite;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .experience-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .experience-text {
+        max-width: 100%;
+    }
+    .experience-icon {
+        max-width: 100%;
+    }
+}
 /* Seção | Meus Projetos*/
 
 /* Seção de projetos */
@@ -609,7 +712,7 @@ section {
 
 /* Seção de habilidades com animação de fundo */
 .skills {
-    padding: 230px 20px;
+    padding: 200px 20px;
     background: linear-gradient(135deg, #1e1e2f, #29293f); /* Fundo animado */
     color: #ffffff;
     text-align: center;
@@ -770,8 +873,8 @@ section {
 
 .quality-item p {
     margin-top: 5px;
-    font-size: 0.85rem; /* Reduzi de 16px para 0.85rem */
-    font-weight: bold;
+    font-size: 1.3rem; /* Reduzi de 16px para 0.85rem */
+ 
 }
 
 @keyframes fadeInUp {
@@ -784,6 +887,43 @@ section {
         transform: translateY(0);
     }
 }
+
+.skills-tech {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.tech-card {
+    flex: 1 1 30%;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tech-icons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tech-item, .quality-item {
+    flex: 1 1 30%;
+    margin: 10px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .tech-card {
+        flex: 1 1 100%;
+    }
+
+    .tech-item, .quality-item {
+        flex: 1 1 100%;
+    }
+}
+
+/*Sessão Contato*/
 
 .contact ul {
     list-style: none;
