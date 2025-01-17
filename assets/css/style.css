@@ -302,6 +302,41 @@ section {
     padding: 2rem;
 }
 
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column; /* Altera a direção do flex para coluna */
+        align-items: center; /* Centraliza os itens */
+        gap: 1rem; /* Ajusta o espaçamento entre os itens */
+    }
+
+    .photo {
+        max-width: 100%; /* Ajusta o max-width para 100% */
+        height: auto; /* Ajusta a altura para auto */
+        background-size: contain; /* Ajusta o background-size para contain */
+        margin-bottom: 1rem; /* Adiciona margem inferior para espaçamento */
+    }
+
+    .hero-content {
+        text-align: center; /* Centraliza o texto */
+    }
+    .carousel {
+        gap: 0.5rem; /* Ajusta o espaçamento entre os itens */
+        padding: 0.5rem; /* Ajusta o padding do carrossel */
+        margin-top: 1rem; /* Ajusta a margem superior */
+    }
+
+    .carousel-item {
+        min-width: 40px; /* Diminui a largura mínima dos itens */
+        height: 60px; /* Diminui a altura dos itens */
+        font-size: 1.5rem; /* Ajusta o tamanho da fonte */
+    }
+
+    .carousel-item:hover {
+        transform: scale(1.1); /* Ajusta a escala ao passar o mouse */
+    }
+}
+
+
 .about,
 .projects,
 .skills,
