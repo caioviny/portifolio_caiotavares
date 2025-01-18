@@ -52,7 +52,6 @@
     color: var(--verde-escuro);
 }
 
-
 body {
     background-color: #ffffff;
     color: #333;
@@ -65,12 +64,14 @@ body {
     padding: 2rem;
     background: transparent;
 }
+
 .project-header h1 {
     font-size: 2rem;
     color: #2e7d32; /* Verde */
     margin-left: 1rem; /* Margem ajustada */
     font-weight: 900;
 }
+
 .project-header p {
     font-size: 1.2rem;
     margin-top: 1rem;
@@ -78,17 +79,20 @@ body {
     margin-left: 1rem; /* Margem ajustada */
     margin-bottom: 40px;
 }
+
 .image-selector img {
     width: 100%;
     border-radius: 8px;
     transition: transform 0.3s ease;
 }
+
 #main-image {
     width: 120%;
     max-height: 500px; /* Limite de altura para manter a proporção */
     object-fit: cover;
     border-radius: 12px;
 }
+
 .thumbnails img {
     width: 80px;
     margin: 5px;
@@ -96,10 +100,12 @@ body {
     border-radius: 8px;
     transition: transform 0.3s ease, border 0.3s ease;
 }
+
 .thumbnails img:hover {
     transform: scale(1.1);
     border: 2px solid #2e7d32; /* Verde */
 }
+
 .btn-project {
     margin: 0.5rem;
     color: #fff;
@@ -110,28 +116,31 @@ body {
     font-weight: bold;
     transition: all 0.3s ease;
 }
+
 .btn-project:hover {
     background: #126316; /* Verde mais claro */
 }
+
 .tech-section p {
     font-size: 1.2rem;
     font-weight: 900;
     color: #2e7d32; /* Verde */
     margin-left: 1rem;
 }
+
 .tech-icons {
     font-size: 2.8rem;
     color: #388e3c; /* Verde claro */
     margin-bottom: 40px;
-    
 }
+
 .tech-icons i {
     margin: 0 10px;
 }
+
 .tech-section {
     margin-bottom: 2rem; /* Espaçamento entre tecnologias e botões */
 }
-
 
 /* Footer */
 .footer {
@@ -188,4 +197,88 @@ body {
 .footer-copyright {
     font-size: 0.8rem;
     color: #888;
+}
+
+/* Media Queries para telas menores que 768px */
+@media (max-width: 768px) {
+    .header {
+        padding: 10px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .project-container {
+        padding: 1rem;
+    }
+
+    .project-header h1 {
+        font-size: 1.5rem;
+        margin-left: 0;
+    }
+
+    .project-header p {
+        font-size: 1rem;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .image-selector img {
+        width: 100%;
+    }
+
+    #main-image {
+        padding-top: 50px;
+        width: 100%;
+        max-height: 300px;
+    }
+
+    .thumbnails img {
+        width: 60px;
+    }
+
+    .btn-project {
+        padding: 0.5rem 1rem;
+    }
+
+    .tech-section p {
+        font-size: 1rem;
+        margin-left: 0;
+    }
+
+    .tech-icons {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .footer {
+        padding: 20px;
+    }
+
+    .footer-container {
+        gap: 10px;
+    }
+
+    .footer-brand h3 {
+        font-size: 1.2rem;
+    }
+
+    .footer-brand p {
+        font-size: 0.8rem;
+    }
+
+    .footer-links a {
+        font-size: 1.2rem;
+    }
+
+    .footer-copyright {
+        font-size: 0.7rem;
+    }
 }
