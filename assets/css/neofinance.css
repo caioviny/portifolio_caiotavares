@@ -29,6 +29,10 @@
     color: var(--verde-escuro);
 }
 
+.logo img{
+    width: 45px;
+}
+
 /* Estilo dos Links de Navegação */
 .nav-links {
     list-style: none;

@@ -71,6 +71,10 @@ body {
     transform-origin: bottom left;
 }
 
+.logo img{
+    width: 35px;
+}
+
 /* Hero Section */
 .hero {
     position: relative;
@@ -437,7 +441,7 @@ section {
     background: var(--cor-primaria);
     color: #fff;
     text-decoration: none;
-    border-radius: 30px;
+    border-radius: 20px;
     font-size: 1.2rem;
     font-weight: bold;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -446,7 +450,7 @@ section {
 
 .btn-primary:hover {
     transform: translateY(-5px) scale(1.1);
-    background-color: #004d40;
+    background-color: green;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -698,7 +702,7 @@ section {
     display: inline-block;
     padding: 10px 20px;
     font-size: 1rem;
-    color: var(--cor-branca);
+    color: white;
     background-color: var(--cor-primaria);
     border-radius: 5px;
     text-decoration: none;
@@ -706,7 +710,8 @@ section {
 }
 
 .btn-project:hover {
-    background-color: var(--cor-botao-hover);
+    background-color: green;
+    color: white;
     transform: scale(1.05);
 }
 
